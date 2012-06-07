@@ -24,6 +24,15 @@ map <F4> :bw <Enter>
 " Zen Coding
 let g:user_zen_expandabbr_key = '<c-d>'
 
+" Switch off any distro related settings
+set nocompatible
+
+" Switch buffers without having to save
+set hidden
+
+" Better cli completion
+set wildmenu
+
 " Line numbers
 set number 
 
@@ -37,6 +46,9 @@ set copyindent
 
 " No swap files. Useful comment is useful.
 set noswapfile
+
+" ask to save instead allowing a command to fail (if there are unsaved changes)
+set confirm
 
 " Remap Tab to find matching pairs of brackets
 nnoremap <Tab> %
