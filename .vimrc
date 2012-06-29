@@ -16,10 +16,11 @@ au BufNewFile,BufRead *.less set filetype=less
 autocmd BufRead,BufNewFile *.less set filetype=css
 
 " Clear Drupal's cache on <F1> press
-map <F1> :!drush cc <Enter>
+map <F1> :!drush cc all<Enter>
 
-" Map F4 press to close current buffer
-map <F4> :bw <Enter>
+" Remap next and previous tabs to <F2> and <F3>
+map <F2> :tabp <Enter>
+map <F3> :tabn <Enter>
 
 " Zen Coding
 let g:user_zen_expandabbr_key = '<c-d>'
@@ -49,6 +50,9 @@ set noswapfile
 
 " ask to save instead allowing a command to fail (if there are unsaved changes)
 set confirm
+
+" lets you backspace around the buffer more freely
+set backspace=start,indent,eol
 
 " Remap Tab to find matching pairs of brackets
 nnoremap <Tab> %
