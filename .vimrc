@@ -1,3 +1,9 @@
+" autocomplete for PHP
+filetype plugin on
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
 " Make Vim read various Drupal file types as PHP
 if has("autocmd")
   augroup module
