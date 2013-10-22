@@ -1,3 +1,12 @@
+" Use spaces rather than tab characters
+set expandtab
+
+" 2 spaces per tab
+set tabstop=2
+
+" 2 spaces per indentation (>>)
+set shiftwidth=2
+
 " autocomplete for PHP
 filetype plugin on
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
